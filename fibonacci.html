@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacci</title>
+</head>
+<body>
+    <script>
+        const value = prompt(`enter any number`);
+        let n1=0;
+        let n2=1;
+        let next;
+        document.write(`fibonacci series upto ${value} numbers are: `
+        )
+
+        for(i=1;i<=value;i++){
+            document.write(`${n1},`);
+            next=n1+n2;
+            n1=n2;
+            n2=next;
+        }
+    </script>
+</body>
+</html>
